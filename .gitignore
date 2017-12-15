@@ -1,2 +1,3 @@
-/target/
+/target/*
 /lib/repo/*
+/src/main/resources/default

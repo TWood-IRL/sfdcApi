@@ -10,7 +10,13 @@ import com.sf.api.properties.PropertiesFile;
  public class  RecordTypes {
 	//Combination of SObject-Name
 
-	
+	/*
+	 * Initially was 
+	 *  public enum RecordTypes {
+	 *  
+	 *   AccountCustomer("Account-Customer"), 
+
+	 */
 	
 	protected String id ; 
 	protected String theRecordType ; 

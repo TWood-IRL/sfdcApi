@@ -35,10 +35,6 @@ import com.sf.api.properties.PropertiesFile;
 		this.id = id ;  
 	}
 
-	public static RecordTypes AccountBroker(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 
 	

@@ -20,17 +20,13 @@ import com.sf.api.properties.PropertiesFile;
 	
 	RecordTypes(String theRecordType){
 		this.theRecordType = theRecordType ; 
-		//initialize(theRecordType) ; 
 	}
 	
 	public String getId(){
 		return this.id ; 
 	}
 	
-//	No Longer needed - populated through RecordTypeDataprovider noww 
-//	private void initialize(String theRecordType) {
-//		this.id = (props.getProperties().getProperty(theRecordType) != null ) ? props.getProperties().getProperty(theRecordType): null  ; 
-//	}
+
 	protected void setId(String id){
 		this.id = id ;  
 	}

@@ -52,7 +52,7 @@ public  class PropertiesFile {
 			
 		} catch (Exception ex) {
 			LOG.warning("Failed to load the properties file, is it created ?"
-					+ String.format("\nCheck in unum.salesforce.regression.api/src/resources directory for: %s.properties ",org ) 
+					+ String.format("\nCheck in com.sf.api/src/resources directory for: %s.properties ",org ) 
 					+ "\nExiting Application "
 					+ "\nError: " + ex);
 			System.exit(-1);

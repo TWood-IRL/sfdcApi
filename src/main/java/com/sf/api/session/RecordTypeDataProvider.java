@@ -5,7 +5,12 @@ import java.util.logging.Logger;
 import com.sforce.soap.partner.QueryResult;
 import com.sforce.soap.partner.sobject.SObject;
 import com.sforce.ws.ConnectionException;
-
+/**
+ * This class was iniatially for when the RecordTypes Class was a enum to provide the value, not really to relevant now 
+ * 
+ * @author Thomas Woodhouse
+ *
+ */
  class RecordTypeDataProvider {
 	private static RecordTypeDataProvider instance; 
 	private static final Logger LOG = Logger.getLogger(RecordTypeDataProvider.class.getName()) ; 

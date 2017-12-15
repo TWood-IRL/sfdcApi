@@ -1,3 +1,4 @@
 target/
 lib/repo/
 src/main/resources/
+APILoggingFile.log

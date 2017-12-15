@@ -18,7 +18,7 @@ public class TestClass {
 	public  void setUp() {
 		SObject account = new SObject("Account") ;
 		account.setSObjectField("Name", "Test Account ");
-		account.setSObjectField("RecordTypeId", RecordTypes.getRecordType("Account", "Customer"));
+	//	account.setSObjectField("RecordTypeId", RecordTypes.getRecordType("Account", "Customer"));
 		result = PartnerSession.insert(new SObject[] {account}) ; 
 		
 	}

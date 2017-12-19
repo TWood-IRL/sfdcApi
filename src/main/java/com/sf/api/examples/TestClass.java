@@ -28,7 +28,7 @@ public class TestClass {
 		System.out.println(result[0].getId());
 	}
 	@After
-	public void tearDown(){
+	public void tearDown(){ //removing the data after the test has finished this can be implemented differently if needed 
 		
 	}
 }

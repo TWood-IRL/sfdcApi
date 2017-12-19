@@ -20,7 +20,12 @@ import com.sf.api.properties.PropertiesFile;
 	 //once the class is initialized our RecordTypeDataProvider will provide the values we then need for the map correctly 
 	 static RecordTypeDataProvider recordTypeDataProvider = RecordTypeDataProvider.getInstance() ;
 
-	 
+	 /**
+	  * 
+	  * @param The SObject name if custom object append on the __c 
+	  * @param developerName the developer Name (API name ) of the record type
+	  * @return
+	  */
 	 public static String getId(String obj, String developerName){
 		 return recordTypeMap.get(obj).get(developerName).toString() ; 
 	 } 

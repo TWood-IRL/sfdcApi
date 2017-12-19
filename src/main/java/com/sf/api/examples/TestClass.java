@@ -29,6 +29,8 @@ public class TestClass {
 	}
 	@After
 	public void tearDown(){ //removing the data after the test has finished this can be implemented differently if needed 
-		
+		for(SaveResult record : result) {
+			PartnerSession.delete(new String[]{record.getId()}) ; 
+		}
 	}
 }

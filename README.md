@@ -13,7 +13,7 @@ Which then fire triggers and assert that they are set to what we are expecting..
 
 ## Getting Started
 
-###What things you need to install the software and how to install them
+### What things you need to install the software and how to install them
 
 * Maven 
 
@@ -22,7 +22,7 @@ Which then fire triggers and assert that they are set to what we are expecting..
 
 So I tried to make this a plugin for any maven project so hopefully all you should need to do is add this repo as a module to your project 
 
-####And away you go !
+#### And away you go !
 
 
 

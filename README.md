@@ -2,7 +2,7 @@
 
 A Soap API that I tried to make independant that can be plugged into a project if needed 
 
-##Background
+## Background
 
 So initially I was working in test automation using Selenium to automate the browser, a way we initially had this was 
 Use the CLI Dataloader to load spreadsheets into the test org .. run the selenium scripts .. then delete the data .. 
@@ -21,6 +21,7 @@ Which then fire triggers and assert that they are set to what we are expecting..
 ### Installing
 
 So I tried to make this a plugin for any maven project so hopefully all you should need to do is add this repo as a module to your project 
+Also be sure to run the install-jar.bat file under the lib folder this installs the partner api which gives us the generic api objects 
 
 #### And away you go !
 

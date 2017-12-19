@@ -1,7 +1,6 @@
 package com.sf.api.examples;
 
-import java.sql.ResultSet;
-
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -18,7 +17,7 @@ public class TestClass {
 	public  void setUp() {
 		SObject account = new SObject("Account") ;
 		account.setSObjectField("Name", "Test Account ");
-	//	account.setSObjectField("RecordTypeId", RecordTypes.getRecordType("Account", "Customer"));
+	//	account.setSObjectField("RecordTypeId", RecordTypes.getId("Account", "Customer"));
 		result = PartnerSession.insert(new SObject[] {account}) ; 
 		
 	}
@@ -28,5 +27,8 @@ public class TestClass {
 		
 		System.out.println(result[0].getId());
 	}
-	
+	@After
+	public void tearDown(){
+		
+	}
 }

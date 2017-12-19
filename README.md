@@ -27,7 +27,33 @@ Also be sure to run the install-jar.bat file under the lib folder this installs 
 #### And away you go !
 
 
+### Using in test script
+[Example - Can be found here ](https://github.com/Londoner1234/sfdcApi/blob/master/src/main/java/com/sf/api/examples/TestClass.java) 
 
+```
+private static SaveResult[] result ; 
+	@Before
+	public  void setUp() {
+		SObject account = new SObject("Account") ;
+		account.setSObjectField("Name", "Test Account ");
+		account.setSObjectField("RecordTypeId", RecordTypes.getId("Account", "Broker"));
+		result = PartnerSession.insert(new SObject[] {account}) ; 
+		
+	}
+	
+	@Test
+	public  void doingTestingStuff(){
+		
+		System.out.println(result[0].getId());
+	}
+	@After
+	public void tearDown(){ //removing the data after the test has finished this can be implemented differently if needed 
+		for(SaveResult record : result) {
+			PartnerSession.delete(new String[]{record.getId()}) ; 
+		}
+	}
+
+```
 
 
 ## Built With

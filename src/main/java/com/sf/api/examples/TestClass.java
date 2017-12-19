@@ -1,12 +1,9 @@
 package com.sf.api.examples;
 
-import java.sql.ResultSet;
-
 import org.junit.Before;
 import org.junit.Test;
 
 import com.sf.api.session.PartnerSession;
-import com.sf.api.session.RecordTypes;
 import com.sforce.soap.partner.SaveResult;
 import com.sforce.soap.partner.sobject.SObject;
 

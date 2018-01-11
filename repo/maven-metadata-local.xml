@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>com.github.salesforce.api Maven Plugin</name>
+      <prefix>com.github.tomwood.salesforce.api</prefix>
+      <artifactId>com.github.salesforce.api</artifactId>
+    </plugin>
+   
+  </plugins>
+</metadata>

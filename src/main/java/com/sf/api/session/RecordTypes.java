@@ -3,8 +3,6 @@ package com.sf.api.session ;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.sf.api.properties.PropertiesFile;
-
 /**
  * Class for retreiving record types id based on the org passed in environment... we found in 5 different orgs had multiple different record type ids for the same recordType org to org.. used this to combat that 
  * Had this before as a enum 

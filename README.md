@@ -1,7 +1,6 @@
 # SFDC SOAP API
 
-A Soap API that I tried to make independant that can be plugged into a project if needed 
-
+Utilizing the partner WSDL from a Salesforce organization, generated to a JAR, which is then utilized as a API go between for java. 
 ## Background
 
 So initially I was working in test automation using Selenium to automate the browser, a way we initially had this was 

@@ -1,4 +1,4 @@
-# SFDC SOAP API
+# SFDC API
 
 Utilizing the partner WSDL from a Salesforce organization, generated to a JAR, which is then utilized as a API go between for java. 
 ## Background

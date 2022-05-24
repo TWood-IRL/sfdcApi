@@ -1,1 +1,1 @@
-mvn install:install-file -Dfile=%cd%\partnerApi.jar -DgroupId=com.sf.api -DartifactId=partnerAPI -Dversion=1.0 -Dpackaging=jar -DlocalRepositoryPath=%cd%\repo
+mvn install:install-file -Dfile=%cd%\lib\partnerApi.jar -DgroupId=com.sf.api -DartifactId=partnerAPI -Dversion=1.0 -Dpackaging=jar -DlocalRepositoryPath=%cd%\repo

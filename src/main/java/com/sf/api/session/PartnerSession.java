@@ -43,7 +43,7 @@ public class PartnerSession {
  	private PartnerSession() {
 		org = PropertiesFile.org ;
 		File apiLog = new File("./APILoggingFile.log") ;
-		String endPoint = (props.getType()  == "SANDBOX" ) ? SANDBOX_AUTH : PROD_AUTH ; 
+		String endPoint = (props.getType().equalsIgnoreCase( "SANDBOX") ) ? SANDBOX_AUTH : PROD_AUTH ;
 		if(apiLog.exists()) // if the file exists clear contents
 		{
 			try {
@@ -63,10 +63,8 @@ public class PartnerSession {
 	    try {
 			config.setTraceFile(apiLog.getAbsolutePath());
 		} catch (FileNotFoundException e) {
-			
+			LOG.warning("FileNotFoundException!  " +e );
 		}
-
-
 	    try {     
 	    	LOG.info("API Performing Connection ! to " +org);
 	    	 connection = Connector.newConnection(config);
@@ -98,7 +96,6 @@ public class PartnerSession {
 	 * 
 	 * Will always append on LIMIT 1 
 	 * @param theQuery
-	 * @param theObject
 	 * @return
 	 */
 	public static synchronized SObject[] query(String theQuery){
@@ -147,7 +144,7 @@ public class PartnerSession {
 	/**
 	 * Pass single id of record you wish to delete
 	 * 
-	 * @param ids
+	 * @param theArray
 	 * @return 
 	 */
 	public static synchronized DeleteResult[] delete( String[] theArray){
